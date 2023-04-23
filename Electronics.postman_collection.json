@@ -1,0 +1,321 @@
+{
+	"info": {
+		"_postman_id": "86ee6949-b09a-46ad-94ef-b8ebca2e9353",
+		"name": "Electronics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18690808"
+	},
+	"item": [
+		{
+			"name": "Assets",
+			"item": [
+				{
+					"name": "Get Asset By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n            \"name\": \"Office\",\r\n            \"chipId\": \"15079956\",\r\n            \"model\": \"sm1l\"\r\n            \r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/assets/644541547bfc64f9cb1c136b",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"assets",
+								"644541547bfc64f9cb1c136b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Assets",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n            \"name\": \"Office\",\r\n            \"chipId\": \"15079956\",\r\n            \"model\": \"sm1l\"\r\n            \r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/assets/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"assets",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Asset",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n            \"name\": \"Office Updated\",\r\n            \"chipId\": \"15079956\",\r\n            \"model\": \"sm1l\"\r\n            \r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/assets/6445409a79d7ea7e0c6301b5",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"assets",
+								"6445409a79d7ea7e0c6301b5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Asset",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n            \"name\": \"Office Updated\",\r\n            \"chipId\": \"15079956\",\r\n            \"model\": \"sm1l\"\r\n            \r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/assets/6445409a79d7ea7e0c6301b5",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"assets",
+								"6445409a79d7ea7e0c6301b5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add asset",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n            \"name\": \"Office\",\r\n            \"chipId\": \"15079956\",\r\n            \"model\": \"sm1l\"\r\n            \r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/assets/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"assets",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Devices",
+			"item": [
+				{
+					"name": "Add new device",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"test1\",\r\n    \"type\":\"toggle device\",\r\n    \"command\": \"on\",\r\n    \"locked\":false,\r\n    \"userId\": \"64452fe52228b27b36b0272b\",\r\n    \"assetId\": \"644541547bfc64f9cb1c136b\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/devices",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"devices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Devices",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"test1\",\r\n    \"type\":\"toggle device\",\r\n    \"command\": \"on\",\r\n    \"locked\":false,\r\n    \"userId\": \"64452fe52228b27b36b0272b\",\r\n    \"assetId\": \"644541547bfc64f9cb1c136b\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/devices/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"devices",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Single Device",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"test1\",\r\n    \"type\":\"toggle device\",\r\n    \"command\": \"on\",\r\n    \"locked\":false,\r\n    \"userId\": \"64452fe52228b27b36b0272b\",\r\n    \"assetId\": \"644541547bfc64f9cb1c136b\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/devices/6445647a213082cfe9a4f9db",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"devices",
+								"6445647a213082cfe9a4f9db"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a device",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"test11\",\r\n    \"type\":\"toggle device\",\r\n    \"command\": \"on\",\r\n    \"locked\":false,\r\n    \"userId\": \"64452fe52228b27b36b0272b\",\r\n    \"assetId\": \"644541547bfc64f9cb1c136b\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/devices/6445655332ca39c2913bcd5b",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"devices",
+								"6445655332ca39c2913bcd5b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Sanan\",\r\n    \"username\": \"Sanan\",\r\n    \"password\": \"sanan123\",\r\n    \"email\": \"sanan@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/auth/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
